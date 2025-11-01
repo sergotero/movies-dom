@@ -1,0 +1,107 @@
+// Array de películas populares
+const movies = [
+  {
+    id: 1,
+    title: "Avatar: El Camino del Agua",
+    genres: ["Sci-Fi", "Aventura"],
+    description:
+      "Jake Sully vive con su nueva familia formada en el planeta de Pandora. Cuando una amenaza familiar regresa para terminar lo que se empezó anteriormente, Jake debe trabajar con Neytiri y el ejército de la raza Na'vi para proteger su hogar.",
+    rating: 8.5,
+    duration: 192, // en minutos
+    year: 2022,
+    director: "James Cameron",
+    poster: "https://image.tmdb.org/t/p/w500/94xxm5701CzOdJdUEdIuwqZaowx.jpg",
+    gradient: "from-purple-500 to-pink-500",
+  },
+  {
+    id: 2,
+    title: "Top Gun: Maverick",
+    genres: ["Acción", "Drama"],
+    description:
+      "Después de más de 30 años de servicio como uno de los mejores aviadores de la Marina, Pete 'Maverick' Mitchell se encuentra donde pertenece, empujando los límites como un valiente piloto de prueba.",
+    rating: 8.7,
+    duration: 131,
+    year: 2022,
+    director: "Joseph Kosinski",
+    poster: "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+    gradient: "from-red-500 to-orange-500",
+  },
+  {
+    id: 3,
+    title: "Black Panther: Wakanda Forever",
+    genres: ["Acción", "Aventura"],
+    description:
+      "La reina Ramonda, Shuri, M'Baku, Okoye y las Dora Milaje luchan por proteger su nación de las potencias mundiales que intervienen tras la muerte del rey T'Challa.",
+    rating: 6.7,
+    duration: 161,
+    year: 2022,
+    director: "Ryan Coogler",
+    poster: "https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    gradient: "from-green-500 to-blue-500",
+  },
+  {
+    id: 4,
+    title: "The Batman",
+    genres: ["Acción", "Drama"],
+    description:
+      "Cuando un asesino se dirige a la élite de Gotham con una serie de maquinaciones sádicas, un rastro de pistas crípticas envía al Detective Mundial en una investigación en el inframundo.",
+    rating: 7.8,
+    duration: 176,
+    year: 2022,
+    director: "Matt Reeves",
+    poster: "https://image.tmdb.org/t/p/w500/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg",
+    gradient: "from-yellow-500 to-red-500",
+  },
+  {
+    id: 5,
+    title: "Doctor Strange in the Multiverse of Madness",
+    genres: ["Acción", "Aventura", "Sci-Fi"],
+    description:
+      "El Dr. Stephen Strange desata un mal indescriptible mientras intenta determinar su destino con The Avengers. Con la ayuda de amigos místicos tanto viejos como nuevos, atraviesan las alucinantes y peligrosas realidades alternativas del Multiverso.",
+    rating: 6.9,
+    duration: 126,
+    year: 2022,
+    director: "Sam Raimi",
+    poster: "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+    gradient: "from-indigo-500 to-purple-500",
+  },
+  {
+    id: 6,
+    title: "Scream",
+    genres: ["Terror", "Misterio"],
+    description:
+      "25 años después de que una serie de brutales asesinatos conmocionara a la tranquila ciudad de Woodsboro, un nuevo asesino se ha puesto la máscara de Ghostface y comienza a perseguir a un grupo de adolescentes.",
+    rating: 6.3,
+    duration: 114,
+    year: 2022,
+    director: "Matt Bettinelli-Olpin",
+    poster: "https://image.tmdb.org/t/p/w500/1m3W6cpgwuIyjtg5nSnPx7yFkXW.jpg",
+    gradient: "from-pink-500 to-rose-500",
+  },
+  {
+    id: 7,
+    title: "Dune",
+    genres: ["Sci-Fi", "Aventura"],
+    description:
+      "Una épica aventura mitológica y emotiva, ambientada en un futuro lejano. Paul Atreides, un joven brillante y talentoso nacido para un gran destino más allá de su comprensión, debe viajar al planeta más peligroso del universo.",
+    rating: 8.0,
+    duration: 155,
+    year: 2021,
+    director: "Denis Villeneuve",
+    poster: "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+    gradient: "from-teal-500 to-cyan-500",
+  },
+  {
+    id: 8,
+    title: "Spider-Man: No Way Home",
+    genres: ["Acción", "Aventura"],
+    description:
+      "Peter Parker busca la ayuda del Doctor Strange para hacer que el mundo olvide que Spiderman es Peter Parker. El hechizo sale mal y los villanos más peligrosos de otros mundos comienzan a aparecer.",
+    rating: 8.4,
+    duration: 148,
+    year: 2021,
+    director: "Jon Watts",
+    poster: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    gradient: "from-amber-500 to-orange-500",
+  },
+];
