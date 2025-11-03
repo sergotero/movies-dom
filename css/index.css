@@ -1,0 +1,15 @@
+.active {
+    background-color: rgb(37 99 235);
+}
+
+.active:hover {
+    background-color: rgb(29, 78, 216);
+}
+
+.inactive {
+    background-color: rgb(55 65 81);
+}
+
+.inactive:hover{
+    background-color: rgb(75 85 99);
+}

@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body class="bg-gray-900 text-white min-h-screen">
     <!-- Header -->
@@ -38,34 +39,34 @@
           </div>
 
           <!-- Filtros por género -->
-          <div class="flex flex-wrap gap-2">
+          <div id="categories" class="flex flex-wrap gap-2">
             <button
-              class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="active px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Todos
             </button>
             <button
-              class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="inactive px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Acción
             </button>
             <button
-              class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="inactive px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Drama
             </button>
             <button
-              class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="inactive px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Comedia
             </button>
             <button
-              class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="inactive px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Sci-Fi
             </button>
             <button
-              class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+              class="inactive px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               Terror
             </button>
@@ -82,13 +83,14 @@
             Películas Populares
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div id="movie-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Película 1 -->
             <div
               id="movie-template"
               class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
               <div
+                id="film-poster"
                 class="h-64 bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center"
               >
                 <i class="fas fa-film text-6xl text-white opacity-50"></i>
@@ -129,19 +131,19 @@
             </h2>
 
             <!-- Resumen de tiempo -->
-            <div class="bg-gray-700 rounded-lg p-4 mb-6">
+            <div id="resumen-tiempo" class="bg-gray-700 rounded-lg p-4 mb-6">
               <div class="text-center">
-                <div class="text-3xl font-bold text-green-400 mb-2">8h 23m</div>
+                <div id="totalWLTime" class="text-3xl font-bold text-green-400 mb-2">8h 23m</div>
                 <div class="text-gray-400 text-sm">Tiempo total estimado</div>
               </div>
               <div class="mt-4 text-center">
-                <div class="text-lg font-semibold text-white">3 películas</div>
+                <div id="totalWL" class="text-lg font-semibold text-white">3 películas</div>
                 <div class="text-gray-400 text-sm">en tu lista</div>
               </div>
             </div>
 
             <!-- Lista de películas en watchlist -->
-            <div class="space-y-4">
+            <div id="watchlist" class="space-y-4">
               <!-- Película 1 en watchlist -->
               <div
                 id="movie-watchlist-template"
@@ -186,4 +188,6 @@
       </div>
     </div>
   </body>
+  <script src="/js/movies.js"></script>
+  <script src="/js/index.js"></script>
 </html>
